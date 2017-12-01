@@ -2,6 +2,7 @@
 class ObjectTypeTemplate{
   constructor(newVariables){
     const variables = newVariables;
+    //keep indentation
     const template = (`
 import {
   GraphQLSchema,
@@ -12,15 +13,17 @@ import {
   GraphQLBoolean,
 } from 'graphql';
 
-const ${variables.TypeName} = new GraphQLObjectType({
-  name: '${variables.TypeName}',
-  description: '${variables.TypeDescription}',
+${variables.additionalImports.map(imp => {return '\r'+imp.generate;})}
 
-  fields: () => ({${variables.fields}
+const ${variables.typeName} = new GraphQLObjectType({
+  name: '${variables.typeName}',
+  description: '${variables.typeDescription}',
+
+  fields: () => ({${variables.fields.map(field => field.generate)}
   })
 });
 
-export {${variables.TypeName}};
+export {${variables.typeName}};
     `);
     this.template = template;
   }

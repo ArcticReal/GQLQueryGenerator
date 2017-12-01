@@ -25,6 +25,8 @@ class TypeField{
       }
       if(this.loader===undefined||this.loader===null||this.loader==='')
         this.loader = `ofbizArray`;
+      if(this.args===undefined||this.args===null)
+        this.args = '';
 
       //For right indentation don't move this
       this.template = (`

@@ -1,6 +1,10 @@
 
 import {ObjectTypeTemplate} from './ObjectTypeTemplate.js';
 import {TypeField} from './TypeFieldClass.js';
+import {Import} from './ImportClass';
+import fs from 'fs';
+
+const pathToOutput = '/home/work/workspace/QLGen/generatedFiles/';
 
 const fields = [
   new TypeField({
@@ -21,11 +25,43 @@ const fields = [
   })
 ];
 
+const imports = [
+  new Import({
+    resources: [
+      'ProductCategoryMemberType'
+    ],
+    source: 'product/ProductCategoryMemberType'
+  }),
+  new Import({
+    resources: [
+      'ProductCategoryType'
+    ],
+    source: 'product/ProductCategoryType'
+  })
+];
 
 const newVariables = {
-  TypeName: "ProductType",
-  TypeDescription: "this is a product type",
-  fields: `${fields.map(field => field.generate)}`,
-  additionalImports: ``
+  typeName: "ProductType",
+  typeDescription: "this is a product type",
+  fields: fields,
+  additionalImports: imports
 };
-console.log(new ObjectTypeTemplate(newVariables).generate);
+const file = {
+  path: `${pathToOutput}types/`,
+  name: `${newVariables.typeName}.js`,
+  content: new ObjectTypeTemplate(newVariables).generate,
+  encoding: 'utf8'
+};
+fs.mkdir(file.path, (err) => {
+  if (err){
+    if(err.code!=='EEXIST')
+      throw err;
+  }else {
+    console.log('mkdired');
+  }
+  fs.writeFile(`${file.path}${file.name}`, file.content, file.encoding, (err) => {
+    if (err) throw err;
+    console.log("writing successful");
+  });
+});
+console.log(file.content);
