@@ -34,7 +34,8 @@ const imports = [
   }),
   new Import({
     resources: [
-      'ProductCategoryType'
+      'ProductCategoryType',
+      'SomeOtherType'
     ],
     source: 'product/ProductCategoryType'
   })

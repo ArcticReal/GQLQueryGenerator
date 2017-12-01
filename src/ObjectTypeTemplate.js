@@ -13,7 +13,7 @@ import {
   GraphQLBoolean,
 } from 'graphql';
 
-${variables.additionalImports.map(imp => {return '\r'+imp.generate;})}
+${variables.additionalImports.map(imp => {return imp.generate;}).join('')}
 
 const ${variables.typeName} = new GraphQLObjectType({
   name: '${variables.typeName}',
