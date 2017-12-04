@@ -1,29 +1,17 @@
 
 import {ObjectTypeTemplate} from './ObjectTypeTemplate.js';
 import {TypeField} from './TypeFieldClass.js';
-import {Import} from './ImportClass';
+import {Import} from './ImportClass.js';
+import {createFile} from './framework/FileUtil.js';
 import fs from 'fs';
 
-const pathToOutput = '/home/work/workspace/QLGen/generatedFiles/';
 
-const fields = [
-  new TypeField({
-    fieldName: 'categoryMembers',
-    fieldType: 'new GraphQLList(ProductCategoryMemberType)',
-    fetchUrl: /*ofbiz/eCommerce/api/*/'productCategoryMembers/find?id=vgerge',
-    parentType: 'product',
-    loader: '',
-    args: ``
-  }),
-  new TypeField({
-    fieldName: 'productId',
-    fieldType: 'GraphQLString',
-  }),
-  new TypeField({
-    fieldName: 'productName',
-    fieldType: 'GraphQLString',
-  })
-];
+import allEntities from '../resources/entity_jsons/overall.json';
+
+
+console.log(importBuffer);
+
+const pathToOutput = '/home/work/workspace/QLGen/generatedFiles/';
 
 const imports = [
   new Import({
@@ -41,28 +29,17 @@ const imports = [
   })
 ];
 
-const newVariables = {
-  typeName: "ProductType",
+const typeDef = {
+  typeName: productEntity.entityName,
   typeDescription: "this is a product type",
-  fields: fields,
+  fields: productEntity.fields.map((field) => {return new TypeField(field);}),
   additionalImports: imports
 };
 const file = {
   path: `${pathToOutput}types/`,
-  name: `${newVariables.typeName}.js`,
-  content: new ObjectTypeTemplate(newVariables).generate,
+  name: `${typeDef.typeName}Type.js`,
+  content: new ObjectTypeTemplate(typeDef).generate,
   encoding: 'utf8'
 };
-fs.mkdir(file.path, (err) => {
-  if (err){
-    if(err.code!=='EEXIST')
-      throw err;
-  }else {
-    console.log('mkdired');
-  }
-  fs.writeFile(`${file.path}${file.name}`, file.content, file.encoding, (err) => {
-    if (err) throw err;
-    console.log("writing successful");
-  });
-});
-console.log(file.content);
+
+createFile(file);

@@ -7,16 +7,17 @@ class ObjectTypeTemplate{
 import {
   GraphQLSchema,
   GraphQLObjectType,
-  GraphQLList,
-  GraphQLString,
   GraphQLInt,
+  GraphQLFloat,
+  GraphQLString,
   GraphQLBoolean,
+  GraphQLList,
 } from 'graphql';
 
 ${variables.additionalImports.map(imp => {return imp.generate;}).join('')}
 
 const ${variables.typeName} = new GraphQLObjectType({
-  name: '${variables.typeName}',
+  name: '${variables.typeName}Type',
   description: '${variables.typeDescription}',
 
   fields: () => ({${variables.fields.map(field => field.generate)}

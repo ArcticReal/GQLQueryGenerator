@@ -31,9 +31,9 @@ class TypeField{
       //For right indentation don't move this
       this.template = (`
     ${this.fieldName}: {
-      type: ${this.fieldType},
-      args : {${this.args}},
-      resolve: (${this.parentType}, args, {loaders}) => loaders.${this.loader}.load('${this.resolve}')
+      type: ${this.fieldType}Type,
+      args : {${this.args.map((arg) => {return `${arg.fieldName}: {type: ${arg.fieldType}}`;})}},
+      resolve: (${this.parentType}, args, {loaders}) => loaders.${this.loader}.load(\`${this.resolve}\`)
     }`);
     }
     return this.template;
