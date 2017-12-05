@@ -1,0 +1,2647 @@
+{
+  "marketing": {
+    "SalesOpportunityCompetitor": [
+      "SalesOpportunity"
+    ],
+    "ContactListCommStatus": [
+      "StatusItem",
+      "ContactList",
+      "CommunicationEvent",
+      "Party",
+      "ContactMech",
+      "UserLogin"
+    ],
+    "TrackingCodeVisit": [
+      "TrackingCode"
+    ],
+    "SalesForecastDetail": [
+      "ProductCategory",
+      "Product",
+      "SalesForecast"
+    ],
+    "SegmentGroupRole": [
+      "SegmentGroup",
+      "PartyRole"
+    ],
+    "WebSiteContactList": [
+      "ContactList",
+      "WebSite"
+    ],
+    "MarketingCampaignNote": [
+      "MarketingCampaign",
+      "NoteData"
+    ],
+    "MarketingCampaignPromo": [
+      "MarketingCampaign",
+      "ProductPromo"
+    ],
+    "SegmentGroupGeo": [
+      "Geo",
+      "SegmentGroup"
+    ],
+    "MarketingCampaignPrice": [
+      "MarketingCampaign",
+      "ProductPriceRule"
+    ],
+    "TrackingCode": [
+      "MarketingCampaign",
+      "TrackingCodeType"
+    ],
+    "TrackingCodeOrderReturn": [
+      "TrackingCode",
+      "OrderHeader",
+      "TrackingCodeType",
+      "ReturnHeader"
+    ],
+    "SegmentGroupClassification": [
+      "PartyClassificationGroup",
+      "SegmentGroup"
+    ],
+    "TrackingCodeOrder": [
+      "TrackingCode",
+      "OrderHeader",
+      "TrackingCodeType"
+    ],
+    "SalesOpportunityTrckCode": [
+      "SalesOpportunity"
+    ],
+    "MarketingCampaign": [
+      "StatusItem"
+    ],
+    "ContactList": [
+      "MarketingCampaign",
+      "ContactMechType",
+      "ContactListType",
+      "Party",
+      "UserLogin",
+      "UserLogin"
+    ],
+    "ContactListParty": [
+      "StatusItem",
+      "ContactList",
+      "ContactMech",
+      "Party"
+    ],
+    "MarketingCampaignRole": [
+      "MarketingCampaign",
+      "PartyRole"
+    ],
+    "SalesForecast": [
+      "UserLogin",
+      "UserLogin",
+      "Party",
+      "Party",
+      "CustomTimePeriod"
+    ],
+    "ContactListPartyStatus": [
+      "ContactListParty"
+    ],
+    "SalesOpportunityWorkEffort": [
+      "WorkEffort",
+      "SalesOpportunity"
+    ],
+    "SalesForecastHistory": [
+      "UserLogin",
+      "Party",
+      "SalesForecast",
+      "Party",
+      "CustomTimePeriod"
+    ],
+    "SegmentGroup": [
+      "ProductStore",
+      "SegmentGroupType"
+    ],
+    "SalesOpportunityQuote": [
+      "Quote",
+      "SalesOpportunity"
+    ]
+  },
+  "product": {
+    "FacilityGroupRole": [
+      "FacilityGroup",
+      "PartyRole"
+    ],
+    "Product": [
+      "Geo",
+      "UserLogin",
+      "Party",
+      "ProductCategory",
+      "UserLogin",
+      "InventoryItemType",
+      "Facility",
+      "ShipmentBoxType",
+      "ProductType"
+    ],
+    "ProductCategoryRollup": [
+      "ProductCategory",
+      "ProductCategory"
+    ],
+    "ProductPromoAction": [
+      "OrderAdjustmentType",
+      "ProductPromoRule"
+    ],
+    "ProductPriceChange": [
+      "UserLogin"
+    ],
+    "CostComponentCalc": [
+      "CustomMethod",
+      "GlAccountType",
+      "GlAccountType"
+    ],
+    "InventoryItemTempRes": [
+      "Product",
+      "ProductStore"
+    ],
+    "ProductStoreKeywordOvrd": [
+      "ProductStore"
+    ],
+    "ProductAssoc": [
+      "RecurrenceInfo",
+      "Product",
+      "CustomMethod",
+      "Product",
+      "ProductAssocType",
+      "WorkEffort"
+    ],
+    "Subscription": [
+      "OrderItem",
+      "SubscriptionResource",
+      "SubscriptionType",
+      "ContactMech",
+      "ProductCategory",
+      "Party",
+      "RoleType",
+      "NeedType",
+      "Product",
+      "InventoryItem",
+      "RoleType",
+      "Party"
+    ],
+    "ProductPromoUse": [
+      "OrderHeader",
+      "ProductPromoCode",
+      "ProductPromo",
+      "Party"
+    ],
+    "ProductCategoryGlAccount": [
+      "ProductCategory",
+      "GlAccountType",
+      "GlAccount",
+      "Party"
+    ],
+    "ConfigOptionProductOption": [
+      "ProductConfigProduct",
+      "ProductConfigConfig"
+    ],
+    "ProductStoreVendorPayment": [
+      "ProductStore",
+      "PaymentMethodType",
+      "Party"
+    ],
+    "FacilityAttribute": [
+      "Facility"
+    ],
+    "ProductStoreVendorShipment": [
+      "Party",
+      "ProductStore",
+      "ShipmentMethodType",
+      "Party"
+    ],
+    "InventoryItemDetail": [
+      "WorkEffort",
+      "InventoryItem",
+      "PhysicalInventory",
+      "ItemIssuance",
+      "FixedAssetMaint",
+      "ShipmentReceipt"
+    ],
+    "ProductFeaturePrice": [
+      "UserLogin",
+      "UserLogin",
+      "ProductPriceType"
+    ],
+    "ProductConfigOption": [
+      "ProductConfigItem"
+    ],
+    "ProductStoreGroup": [
+      "ProductStoreGroupType"
+    ],
+    "ProductFeatureCatGrpAppl": [
+      "ProductCategory",
+      "ProductFeatureGroup"
+    ],
+    "ProductStoreGroupRole": [
+      "PartyRole",
+      "ProductStoreGroup"
+    ],
+    "ProductStoreRole": [
+      "ProductStore",
+      "PartyRole"
+    ],
+    "ProductCostComponentCalc": [
+      "CostComponentType",
+      "Product",
+      "CostComponentCalc"
+    ],
+    "ContainerGeoPoint": [
+      "Container",
+      "GeoPoint"
+    ],
+    "ProductStoreEmailSetting": [
+      "Enumeration",
+      "ProductStore"
+    ],
+    "MarketInterest": [
+      "ProductCategory",
+      "PartyClassificationGroup"
+    ],
+    "FacilityTypeAttr": [
+      "FacilityType"
+    ],
+    "ProductFeatureApplAttr": [
+      "ProductFeatureAppl",
+      "ProductFeature"
+    ],
+    "ProductAttribute": [
+      "Product"
+    ],
+    "ProductGeo": [
+      "Product",
+      "Geo"
+    ],
+    "ProductPromoProduct": [
+      "Product",
+      "ProductPromo"
+    ],
+    "ProductReview": [
+      "UserLogin",
+      "Product",
+      "StatusItem",
+      "ProductStore"
+    ],
+    "SupplierProduct": [
+      "Product",
+      "SupplierRatingType",
+      "SupplierPrefOrder",
+      "AgreementItem",
+      "Party"
+    ],
+    "ProductStoreGroupRollup": [
+      "ProductStoreGroup",
+      "ProductStoreGroup"
+    ],
+    "ProductGroupOrder": [
+      "JobSandbox",
+      "Product",
+      "StatusItem"
+    ],
+    "SubscriptionFulfillmentPiece": [
+      "SubscriptionActivity",
+      "Subscription"
+    ],
+    "SubscriptionTypeAttr": [
+      "SubscriptionType"
+    ],
+    "ProductCategoryAttribute": [
+      "ProductCategory"
+    ],
+    "InventoryItemAttribute": [
+      "InventoryItem"
+    ],
+    "ProductFeatureDataResource": [
+      "DataResource",
+      "ProductFeature"
+    ],
+    "ProductCalculatedInfo": [
+      "Product"
+    ],
+    "ProductRole": [
+      "Product",
+      "PartyRole"
+    ],
+    "FacilityContactMech": [
+      "Facility",
+      "ContactMech"
+    ],
+    "ProductMaint": [
+      "Product",
+      "WorkEffort",
+      "ProductMaintType",
+      "ProductMeterType"
+    ],
+    "ProdCatalogCategory": [
+      "ProdCatalogCategoryType",
+      "ProductCategory",
+      "ProdCatalog"
+    ],
+    "ProductPaymentMethodType": [
+      "Product",
+      "PaymentMethodType",
+      "ProductPricePurpose"
+    ],
+    "ProductCategoryRole": [
+      "ProductCategory",
+      "PartyRole"
+    ],
+    "InventoryItemLabelAppl": [
+      "InventoryItem",
+      "InventoryItemLabel",
+      "InventoryItemLabelType"
+    ],
+    "ProductCategoryContent": [
+      "ProductCategoryContentType",
+      "ProductCategory",
+      "Content"
+    ],
+    "ProdConfItemContent": [
+      "ProductConfigItem",
+      "ProdConfItemContentType",
+      "Content"
+    ],
+    "Facility": [
+      "InventoryItemType",
+      "FacilityGroup",
+      "Party",
+      "FacilityType",
+      "GeoPoint"
+    ],
+    "ProductConfigOptionIactn": [
+      "ProductConfigOption",
+      "ProductConfigOption"
+    ],
+    "GoodIdentification": [
+      "Product",
+      "GoodIdentificationType"
+    ],
+    "ProductStoreGroupMember": [
+      "ProductStore",
+      "ProductStoreGroup"
+    ],
+    "ProductPromoCond": [
+      "ProductPromoRule"
+    ],
+    "CostComponentTypeAttr": [
+      "CostComponentType"
+    ],
+    "FacilityLocation": [
+      "Facility",
+      "GeoPoint"
+    ],
+    "ProductPromoCategory": [
+      "ProductCategory",
+      "ProductPromo"
+    ],
+    "ReorderGuideline": [
+      "Facility",
+      "Product",
+      "Geo",
+      "Party"
+    ],
+    "ProductFacilityLocation": [
+      "FacilityLocation",
+      "Product"
+    ],
+    "CostComponentAttribute": [
+      "CostComponent"
+    ],
+    "Container": [
+      "Facility",
+      "ContainerType"
+    ],
+    "ProductFeatureAppl": [
+      "Product",
+      "ProductFeature",
+      "ProductFeatureApplType"
+    ],
+    "SubscriptionResource": [
+      "Content",
+      "WebSite"
+    ],
+    "ProductFeatureGroupAppl": [
+      "ProductFeature",
+      "ProductFeatureGroup"
+    ],
+    "FacilityLocationGeoPoint": [
+      "FacilityLocation",
+      "GeoPoint"
+    ],
+    "FacilityGroupRollup": [
+      "FacilityGroup",
+      "FacilityGroup"
+    ],
+    "ProductStoreCatalog": [
+      "ProductStore",
+      "ProdCatalog"
+    ],
+    "VendorProduct": [
+      "Product",
+      "Party",
+      "ProductStoreGroup"
+    ],
+    "ProductFacility": [
+      "Facility",
+      "Product"
+    ],
+    "FacilityGroup": [
+      "FacilityGroupType"
+    ],
+    "InventoryItemLabel": [
+      "InventoryItemLabelType"
+    ],
+    "ProductStoreSurveyAppl": [
+      "Survey",
+      "ProductStore",
+      "SurveyApplType"
+    ],
+    "InventoryItemStatus": [
+      "InventoryItem",
+      "StatusItem",
+      "UserLogin"
+    ],
+    "ProductConfigStats": [
+      "Product"
+    ],
+    "ProductContent": [
+      "Product",
+      "RoleType",
+      "Content",
+      "ProductContentType"
+    ],
+    "InventoryTransfer": [
+      "Container",
+      "Facility",
+      "Facility",
+      "InventoryItem",
+      "StatusItem",
+      "ItemIssuance",
+      "Container"
+    ],
+    "ProductStoreShipmentMeth": [
+      "CustomMethod",
+      "ShipmentGatewayConfig"
+    ],
+    "FacilityParty": [
+      "RoleType",
+      "Facility",
+      "PartyRole"
+    ],
+    "SubscriptionCommEvent": [
+      "CommunicationEvent",
+      "Subscription"
+    ],
+    "ProductStoreFacility": [
+      "Facility",
+      "ProductStore"
+    ],
+    "ProductCategory": [
+      "ProductCategoryType"
+    ],
+    "ProductStorePaymentSetting": [
+      "PaymentGatewayConfig",
+      "ProductStore",
+      "PaymentMethodType",
+      "CustomMethod"
+    ],
+    "FacilityContent": [
+      "Facility",
+      "Content"
+    ],
+    "ProductPriceCond": [
+      "ProductPriceRule"
+    ],
+    "ProductSearchConstraint": [
+      "ProductSearchResult"
+    ],
+    "ProductTypeAttr": [
+      "ProductType"
+    ],
+    "InventoryItem": [
+      "Party",
+      "Container",
+      "InventoryItemType",
+      "Facility",
+      "Product",
+      "Lot",
+      "Uom",
+      "Party",
+      "StatusItem"
+    ],
+    "ProductFeatureCategoryAppl": [
+      "ProductCategory",
+      "ProductFeatureCategory"
+    ],
+    "ProductMeter": [
+      "Product",
+      "ProductMeterType"
+    ],
+    "CostComponent": [
+      "WorkEffort",
+      "CostComponentType",
+      "Product",
+      "ProductFeature",
+      "CostComponentCalc",
+      "Geo",
+      "FixedAsset",
+      "Party"
+    ],
+    "ProductConfig": [
+      "ProductConfigItem",
+      "Product"
+    ],
+    "ProductFeature": [
+      "ProductFeatureType",
+      "ProductFeatureCategory",
+      "Uom"
+    ],
+    "InventoryItemTypeAttr": [
+      "InventoryItemType"
+    ],
+    "ProductPromoCode": [
+      "UserLogin",
+      "ProductPromo",
+      "UserLogin"
+    ],
+    "ProductStore": [
+      "StatusItem",
+      "Facility",
+      "StatusItem",
+      "StatusItem",
+      "StatusItem",
+      "StatusItem",
+      "ProductStoreGroup",
+      "StatusItem",
+      "StatusItem",
+      "TaxAuthority",
+      "Party"
+    ],
+    "ProductPrice": [
+      "Product",
+      "ProductStoreGroup",
+      "Party",
+      "UserLogin",
+      "CustomMethod",
+      "Geo",
+      "ProductPricePurpose",
+      "UserLogin",
+      "ProductPriceType"
+    ],
+    "QuantityBreak": [
+      "QuantityBreakType"
+    ],
+    "FacilityCarrierShipment": [
+      "Facility",
+      "Party",
+      "CarrierShipmentMethod"
+    ],
+    "ProductConfigConfig": [
+      "ProductConfigOption"
+    ],
+    "ProductPromoRule": [
+      "ProductPromo"
+    ],
+    "ProdCatalogRole": [
+      "PartyRole",
+      "ProdCatalog"
+    ],
+    "ProductCategoryTypeAttr": [
+      "ProductCategoryType"
+    ],
+    "FacilityContactMechPurpose": [
+      "Facility",
+      "ContactMechPurposeType",
+      "ContactMech"
+    ],
+    "ProductKeyword": [
+      "Product",
+      "StatusItem",
+      "Enumeration"
+    ],
+    "ProductPromoCodeParty": [
+      "ProductPromoCode",
+      "Party"
+    ],
+    "ProductStorePromoAppl": [
+      "ProductStore",
+      "ProductPromo"
+    ],
+    "ProductConfigProduct": [
+      "ProductConfigOption",
+      "Product"
+    ],
+    "ProductPriceAction": [
+      "ProductPriceActionType",
+      "ProductPriceRule"
+    ],
+    "ProductPromoCodeEmail": [
+      "ProductPromoCode"
+    ],
+    "ProductGlAccount": [
+      "Product",
+      "GlAccountType",
+      "GlAccount",
+      "Party"
+    ],
+    "ProductSubscriptionResource": [
+      "Product",
+      "SubscriptionResource",
+      "RoleType",
+      "ProductStore"
+    ],
+    "FacilityGroupMember": [
+      "Facility",
+      "FacilityGroup"
+    ],
+    "InventoryItemVariance": [
+      "InventoryItem",
+      "VarianceReason",
+      "PhysicalInventory"
+    ],
+    "ProductPromo": [
+      "Party",
+      "UserLogin",
+      "UserLogin"
+    ],
+    "ProductCategoryMember": [
+      "ProductCategory",
+      "Product"
+    ],
+    "ProductPromoContent": [
+      "ProductContentType",
+      "Content",
+      "ProductPromo"
+    ],
+    "ProductCategoryLink": [
+      "ProductCategory"
+    ],
+    "SubscriptionAttribute": [
+      "Subscription"
+    ],
+    "ProductFeatureIactn": [
+      "ProductFeatureIactnType",
+      "ProductFeature",
+      "ProductFeature"
+    ],
+    "ProdCatalogInvFacility": [
+      "Facility",
+      "ProdCatalog"
+    ]
+  },
+  "shipment": {
+    "ShipmentRouteSegment": [
+      "TelecomNumber",
+      "Delivery",
+      "StatusItem",
+      "ShipmentMethodType",
+      "PostalAddress",
+      "Facility",
+      "Facility",
+      "Party",
+      "Shipment",
+      "TelecomNumber",
+      "PostalAddress"
+    ],
+    "ShipmentAttribute": [
+      "Shipment"
+    ],
+    "ShipmentGatewayUsps": [
+      "ShipmentGatewayConfig"
+    ],
+    "ShippingDocument": [
+      "ShipmentPackage",
+      "Document"
+    ],
+    "ShipmentGatewayConfig": [
+      "ShipmentGatewayConfigType"
+    ],
+    "CarrierShipmentBoxType": [
+      "Party",
+      "ShipmentBoxType"
+    ],
+    "ItemIssuance": [
+      "OrderItem",
+      "InventoryItem",
+      "ShipmentItem",
+      "FixedAssetMaint",
+      "UserLogin"
+    ],
+    "PicklistStatusHistory": [
+      "Picklist",
+      "StatusItem",
+      "StatusItem",
+      "UserLogin"
+    ],
+    "ShipmentItemBilling": [
+      "ShipmentItem",
+      "InvoiceItem"
+    ],
+    "ShipmentTypeAttr": [
+      "ShipmentType"
+    ],
+    "Picklist": [
+      "Facility",
+      "StatusItem",
+      "ShipmentMethodType"
+    ],
+    "ShipmentCostEstimate": [
+      "ProductStoreShipmentMeth",
+      "Party",
+      "CarrierShipmentMethod",
+      "Geo",
+      "RoleType",
+      "QuantityBreak",
+      "QuantityBreak",
+      "QuantityBreak",
+      "Geo"
+    ],
+    "PicklistItem": [
+      "InventoryItem",
+      "OrderItem",
+      "PicklistBin",
+      "StatusItem"
+    ],
+    "ShipmentPackageRouteSeg": [
+      "ShipmentRouteSegment"
+    ],
+    "ShipmentStatus": [
+      "StatusItem",
+      "Shipment",
+      "UserLogin"
+    ],
+    "ItemIssuanceRole": [
+      "ItemIssuance",
+      "PartyRole"
+    ],
+    "ShipmentGatewayDhl": [
+      "ShipmentGatewayConfig"
+    ],
+    "ShipmentGatewayFedex": [
+      "ShipmentGatewayConfig"
+    ],
+    "ShipmentReceiptRole": [
+      "PartyRole",
+      "ShipmentReceipt"
+    ],
+    "CarrierShipmentMethod": [
+      "PartyRole",
+      "ShipmentMethodType"
+    ],
+    "ShipmentReceipt": [
+      "Product",
+      "OrderItem",
+      "InventoryItem",
+      "RejectionReason",
+      "ShipmentItem",
+      "UserLogin",
+      "ReturnItem"
+    ],
+    "Shipment": [
+      "Party",
+      "WorkEffort",
+      "TelecomNumber",
+      "WorkEffort",
+      "Facility",
+      "PostalAddress",
+      "ReturnHeader",
+      "Facility",
+      "StatusItem",
+      "PostalAddress",
+      "TelecomNumber",
+      "OrderHeader",
+      "Party",
+      "ShipmentType",
+      "PicklistBin"
+    ],
+    "ShipmentPackageContent": [
+      "ShipmentItem",
+      "Product"
+    ],
+    "PicklistBin": [
+      "Picklist",
+      "OrderItemShipGroup"
+    ],
+    "ShipmentItem": [
+      "Product",
+      "Shipment"
+    ],
+    "ShipmentContactMech": [
+      "Shipment",
+      "ShipmentContactMechType",
+      "ContactMech"
+    ],
+    "ShipmentGatewayUps": [
+      "ShipmentGatewayConfig"
+    ],
+    "PicklistRole": [
+      "Picklist",
+      "UserLogin",
+      "PartyRole",
+      "UserLogin"
+    ],
+    "ShipmentPackage": [
+      "Shipment",
+      "ShipmentBoxType"
+    ],
+    "ShipmentItemFeature": [
+      "ShipmentItem",
+      "ProductFeature"
+    ],
+    "Delivery": [
+      "Facility",
+      "Facility",
+      "FixedAsset"
+    ]
+  },
+  "manufacturing": {
+    "TechDataCalendarExcDay": [
+      "TechDataCalendar"
+    ],
+    "TechDataCalendarExcWeek": [
+      "TechDataCalendarWeek",
+      "TechDataCalendar"
+    ],
+    "MrpEvent": [
+      "MrpEventType",
+      "Facility",
+      "Product"
+    ],
+    "TechDataCalendar": [
+      "TechDataCalendarWeek"
+    ],
+    "ProductManufacturingRule": [
+      "Product",
+      "Product",
+      "Product",
+      "Product",
+      "ProductFeature"
+    ]
+  },
+  "workeffort": {
+    "WorkEffortNote": [
+      "WorkEffort",
+      "NoteData"
+    ],
+    "WorkEffortAttribute": [
+      "WorkEffort"
+    ],
+    "WorkEffortIcalData": [
+      "WorkEffort"
+    ],
+    "WorkEffortReview": [
+      "WorkEffort",
+      "UserLogin",
+      "StatusItem"
+    ],
+    "TimesheetRole": [
+      "Timesheet",
+      "PartyRole"
+    ],
+    "WorkEffortKeyword": [
+      "WorkEffort"
+    ],
+    "WorkEffortDeliverableProd": [
+      "WorkEffort",
+      "Deliverable"
+    ],
+    "WorkEffort": [
+      "RecurrenceInfo",
+      "WorkEffortType",
+      "TemporalExpression",
+      "WorkEffortPurposeType",
+      "AccommodationSpot",
+      "NoteData",
+      "StatusItem",
+      "RuntimeData",
+      "FixedAsset",
+      "CustomMethod",
+      "AccommodationMap",
+      "Facility"
+    ],
+    "WorkEffortFixedAssetAssign": [
+      "WorkEffort",
+      "StatusItem",
+      "FixedAsset",
+      "StatusItem"
+    ],
+    "WorkEffortCostCalc": [
+      "WorkEffort",
+      "CostComponentType",
+      "CostComponentCalc"
+    ],
+    "WorkEffortAssocAttribute": [
+      "WorkEffortAssoc"
+    ],
+    "WorkEffortFixedAssetStd": [
+      "WorkEffort",
+      "FixedAssetType"
+    ],
+    "WorkEffortSearchConstraint": [
+      "WorkEffortSearchResult"
+    ],
+    "WorkEffortEventReminder": [
+      "WorkEffort",
+      "Party",
+      "ContactMech"
+    ],
+    "WorkEffortTransBox": [
+      "WorkEffort"
+    ],
+    "WorkEffortBilling": [
+      "WorkEffort",
+      "InvoiceItem"
+    ],
+    "WorkEffortSurveyAppl": [
+      "WorkEffort",
+      "ProductStoreSurveyAppl"
+    ],
+    "WorkEffortContent": [
+      "WorkEffort",
+      "WorkEffortContentType",
+      "Content"
+    ],
+    "WorkEffortTypeAttr": [
+      "WorkEffortType"
+    ],
+    "WorkEffortAssocTypeAttr": [
+      "WorkEffortAssocType"
+    ],
+    "WorkEffortInventoryAssign": [
+      "WorkEffort",
+      "InventoryItem",
+      "StatusItem"
+    ],
+    "Timesheet": [
+      "StatusItem",
+      "UserLogin",
+      "Party",
+      "Party"
+    ],
+    "WorkEffortPartyAssignment": [
+      "WorkEffort",
+      "Facility",
+      "UserLogin",
+      "StatusItem",
+      "StatusItem",
+      "PartyRole"
+    ],
+    "WorkEffortContactMech": [
+      "WorkEffort",
+      "ContactMech"
+    ],
+    "CommunicationEventWorkEff": [
+      "WorkEffort",
+      "CommunicationEvent"
+    ],
+    "ApplicationSandbox": [
+      "WorkEffortPartyAssignment",
+      "RuntimeData"
+    ],
+    "WorkEffortSkillStandard": [
+      "WorkEffort",
+      "SkillType"
+    ],
+    "TimeEntry": [
+      "WorkEffort",
+      "Timesheet",
+      "RateType",
+      "InvoiceItem",
+      "Party"
+    ],
+    "WorkEffortStatus": [
+      "WorkEffort",
+      "StatusItem",
+      "UserLogin"
+    ],
+    "WorkEffortInventoryProduced": [
+      "WorkEffort",
+      "InventoryItem"
+    ],
+    "WorkEffortGoodStandard": [
+      "WorkEffort",
+      "WorkEffortGoodStandardType",
+      "Product",
+      "StatusItem"
+    ],
+    "WorkEffortAssoc": [
+      "WorkEffort",
+      "WorkEffort",
+      "WorkEffortAssocType"
+    ],
+    "Deliverable": [
+      "DeliverableType"
+    ]
+  },
+  "accounting": {
+    "FixedAssetAttribute": [
+      "FixedAsset"
+    ],
+    "Invoice": [
+      "Party",
+      "RoleType",
+      "RecurrenceInfo",
+      "InvoiceType",
+      "BillingAccount",
+      "ContactMech",
+      "StatusItem",
+      "Party"
+    ],
+    "PaymentBudgetAllocation": [
+      "Payment",
+      "Budget"
+    ],
+    "PaymentGroupMember": [
+      "PaymentGroup",
+      "Payment"
+    ],
+    "PaymentGatewayPayflowPro": [
+      "PaymentGatewayConfig"
+    ],
+    "InvoiceItemTypeAttr": [
+      "InvoiceItemType"
+    ],
+    "Deduction": [
+      "Payment",
+      "DeductionType"
+    ],
+    "PaymentGatewayEway": [
+      "PaymentGatewayConfig"
+    ],
+    "PaymentGatewayCyberSource": [
+      "PaymentGatewayConfig"
+    ],
+    "FixedAssetIdent": [
+      "FixedAsset",
+      "FixedAssetIdentType"
+    ],
+    "FixedAssetTypeAttr": [
+      "FixedAssetType"
+    ],
+    "RateAmount": [
+      "WorkEffort",
+      "RateType",
+      "PeriodType",
+      "EmplPositionType",
+      "Party"
+    ],
+    "FixedAsset": [
+      "OrderItem",
+      "Party",
+      "Facility",
+      "RoleType",
+      "FixedAssetType",
+      "Uom",
+      "TechDataCalendar",
+      "Product"
+    ],
+    "PaymentGatewayResponse": [
+      "PaymentMethodType",
+      "OrderPaymentPreference",
+      "PaymentMethod"
+    ],
+    "GlReconciliationEntry": [
+      "GlReconciliation",
+      "AcctgTransEntry"
+    ],
+    "PartyGlAccount": [
+      "GlAccountType",
+      "GlAccount",
+      "Party",
+      "PartyRole"
+    ],
+    "PaymentGatewayWorldPay": [
+      "PaymentGatewayConfig"
+    ],
+    "FixedAssetStdCost": [
+      "FixedAssetStdCostType",
+      "FixedAsset"
+    ],
+    "InvoiceTerm": [
+      "TermType",
+      "Invoice"
+    ],
+    "FixedAssetRegistration": [
+      "FixedAsset",
+      "Party"
+    ],
+    "PaymentContent": [
+      "PaymentContentType",
+      "Payment",
+      "Content"
+    ],
+    "GlAccountTypeDefault": [
+      "GlAccountType",
+      "GlAccount",
+      "Party"
+    ],
+    "FixedAssetProduct": [
+      "Product",
+      "FixedAsset",
+      "FixedAssetProductType"
+    ],
+    "AcctgTransAttribute": [
+      "AcctgTrans"
+    ],
+    "PaymentApplication": [
+      "Payment",
+      "Payment",
+      "GlAccount",
+      "Geo",
+      "Invoice",
+      "BillingAccount"
+    ],
+    "FinAccountAttribute": [
+      "FinAccount"
+    ],
+    "InvoiceRole": [
+      "Invoice",
+      "PartyRole"
+    ],
+    "CheckAccount": [
+      "PaymentMethod",
+      "PostalAddress"
+    ],
+    "BudgetTypeAttr": [
+      "BudgetType"
+    ],
+    "PaymentTypeAttr": [
+      "PaymentType"
+    ],
+    "BudgetItemAttribute": [
+      "BudgetItem"
+    ],
+    "FinAccountTypeAttr": [
+      "FinAccountType"
+    ],
+    "FinAccount": [
+      "FinAccountType",
+      "Party",
+      "GlAccount",
+      "PaymentMethod",
+      "Party"
+    ],
+    "PaymentGatewayiDEAL": [
+      "PaymentGatewayConfig"
+    ],
+    "FinAccountAuth": [
+      "FinAccount"
+    ],
+    "PartyRate": [
+      "RateType",
+      "Party"
+    ],
+    "TaxAuthority": [
+      "Party",
+      "Geo"
+    ],
+    "FinAccountTransTypeAttr": [
+      "FinAccountTransType"
+    ],
+    "GlAccountCategory": [
+      "GlAccountCategoryType"
+    ],
+    "TaxAuthorityAssoc": [
+      "TaxAuthorityAssocType",
+      "TaxAuthority",
+      "TaxAuthority"
+    ],
+    "FinAccountTransAttribute": [
+      "FinAccountTrans"
+    ],
+    "PaymentGatewayAuthorizeNet": [
+      "PaymentGatewayConfig"
+    ],
+    "BudgetStatus": [
+      "StatusItem",
+      "Budget",
+      "UserLogin"
+    ],
+    "InvoiceTermAttribute": [
+      "InvoiceTerm"
+    ],
+    "Budget": [
+      "BudgetType",
+      "CustomTimePeriod"
+    ],
+    "GlAccountHistory": [
+      "GlAccount",
+      "Party",
+      "CustomTimePeriod"
+    ],
+    "PaymentGlAccountTypeMap": [
+      "PaymentType",
+      "GlAccountType",
+      "Party"
+    ],
+    "InvoiceContent": [
+      "InvoiceContentType",
+      "Content",
+      "Invoice"
+    ],
+    "FixedAssetMeter": [
+      "ProductMeterType",
+      "FixedAssetMaint"
+    ],
+    "PartyTaxAuthInfo": [
+      "TaxAuthority",
+      "Party"
+    ],
+    "InvoiceAttribute": [
+      "Invoice"
+    ],
+    "PaymentAttribute": [
+      "Payment"
+    ],
+    "FinAccountTypeGlAccount": [
+      "GlAccount",
+      "Party",
+      "FinAccountType"
+    ],
+    "InvoiceItemAssoc": [
+      "InvoiceItem",
+      "InvoiceItemAssocType",
+      "InvoiceItem"
+    ],
+    "AcctgTrans": [
+      "WorkEffort",
+      "PhysicalInventory",
+      "Payment",
+      "Party",
+      "ShipmentReceipt",
+      "FinAccountTrans",
+      "RoleType",
+      "AcctgTransType",
+      "GlFiscalType",
+      "GlJournal",
+      "InventoryItemVariance",
+      "Shipment",
+      "FixedAsset",
+      "Invoice",
+      "StatusItem"
+    ],
+    "BillingAccountTermAttr": [
+      "BillingAccountTerm"
+    ],
+    "GlAccount": [
+      "GlAccountType",
+      "GlResourceType",
+      "GlAccountClass",
+      "GlXbrlClass"
+    ],
+    "BudgetRevisionImpact": [
+      "BudgetRevision"
+    ],
+    "FixedAssetMaintOrder": [
+      "OrderHeader",
+      "FixedAsset"
+    ],
+    "PartyAcctgPreference": [
+      "Enumeration",
+      "CustomMethod",
+      "GlJournal",
+      "Enumeration",
+      "PaymentMethod",
+      "CustomMethod",
+      "Party",
+      "CustomMethod"
+    ],
+    "BudgetReview": [
+      "BudgetReviewResultType",
+      "Budget",
+      "Party"
+    ],
+    "InvoiceContactMech": [
+      "ContactMechPurposeType",
+      "Invoice",
+      "ContactMech"
+    ],
+    "TaxAuthorityGlAccount": [
+      "GlAccount",
+      "TaxAuthority",
+      "Party"
+    ],
+    "TaxAuthorityRateProduct": [
+      "ProductCategory",
+      "TaxAuthority",
+      "TaxAuthorityRateType",
+      "ProductStore"
+    ],
+    "InvoiceStatus": [
+      "StatusItem",
+      "Invoice",
+      "UserLogin"
+    ],
+    "AcctgTransTypeAttr": [
+      "AcctgTransType"
+    ],
+    "TaxAuthorityCategory": [
+      "ProductCategory",
+      "TaxAuthority"
+    ],
+    "FinAccountTrans": [
+      "OrderItem",
+      "GlReconciliation",
+      "FinAccount",
+      "FinAccountTransType",
+      "StatusItem",
+      "Payment",
+      "Party",
+      "Party"
+    ],
+    "FixedAssetDepMethod": [
+      "FixedAsset",
+      "CustomMethod"
+    ],
+    "InvoiceTypeAttr": [
+      "InvoiceType"
+    ],
+    "AccommodationSpot": [
+      "FixedAsset",
+      "AccommodationClass"
+    ],
+    "InvoiceItemTypeMap": [
+      "InvoiceType",
+      "InvoiceItemType"
+    ],
+    "FixedAssetMaintMeter": [
+      "ProductMeterType",
+      "FixedAssetMaint"
+    ],
+    "GlReconciliation": [
+      "GlAccount",
+      "StatusItem",
+      "Party"
+    ],
+    "GlBudgetXref": [
+      "GlAccount",
+      "BudgetItemType"
+    ],
+    "InvoiceItemTypeGlAccount": [
+      "GlAccount",
+      "Party",
+      "InvoiceItemType"
+    ],
+    "FinAccountRole": [
+      "FinAccount",
+      "PartyRole"
+    ],
+    "InvoiceNote": [
+      "Invoice",
+      "NoteData"
+    ],
+    "VarianceReasonGlAccount": [
+      "VarianceReason",
+      "GlAccount",
+      "Party"
+    ],
+    "GlAccountCategoryMember": [
+      "GlAccount",
+      "GlAccountCategory"
+    ],
+    "InvoiceItemType": [
+      "GlAccount"
+    ],
+    "GiftCardFulfillment": [
+      "OrderItem",
+      "SurveyResponse",
+      "Party"
+    ],
+    "PaymentMethodType": [
+      "GlAccount"
+    ],
+    "PayPalPaymentMethod": [
+      "PaymentMethod",
+      "PostalAddress"
+    ],
+    "BudgetRevision": [
+      "Budget"
+    ],
+    "ProductAverageCost": [
+      "Facility",
+      "Product",
+      "ProductAverageCostType",
+      "Party"
+    ],
+    "BudgetScenarioRule": [
+      "BudgetScenario",
+      "BudgetItemType"
+    ],
+    "FixedAssetTypeGlAccount": [
+      "GlAccount",
+      "GlAccount",
+      "Party",
+      "GlAccount",
+      "GlAccount",
+      "GlAccount"
+    ],
+    "FinAccountStatus": [
+      "FinAccount",
+      "StatusItem",
+      "UserLogin"
+    ],
+    "GlAccountRole": [
+      "GlAccount",
+      "PartyRole"
+    ],
+    "Payment": [
+      "RoleType",
+      "FinAccountTrans",
+      "Party",
+      "OrderPaymentPreference",
+      "GlAccount",
+      "PaymentMethodType",
+      "PaymentType",
+      "StatusItem",
+      "PaymentMethod",
+      "PaymentGatewayResponse",
+      "Party"
+    ],
+    "BudgetItem": [
+      "Budget",
+      "BudgetItemType"
+    ],
+    "PaymentGatewaySagePay": [
+      "PaymentGatewayConfig"
+    ],
+    "FixedAssetMaint": [
+      "StatusItem",
+      "OrderHeader",
+      "WorkEffort",
+      "FixedAsset",
+      "ProductMaintType",
+      "ProductMeterType"
+    ],
+    "GlAccountGroup": [
+      "GlAccountGroupType"
+    ],
+    "PartyFixedAssetAssignment": [
+      "StatusItem",
+      "FixedAsset",
+      "PartyRole"
+    ],
+    "InvoiceItemAttribute": [
+      "InvoiceItem"
+    ],
+    "PaymentMethod": [
+      "FinAccount",
+      "GlAccount",
+      "PaymentMethodType",
+      "Party"
+    ],
+    "GlAccountGroupMember": [
+      "GlAccount",
+      "GlAccountGroupType",
+      "GlAccountGroup"
+    ],
+    "BillingAccountRole": [
+      "BillingAccount",
+      "PartyRole"
+    ],
+    "InvoiceItem": [
+      "Product",
+      "Party",
+      "ProductFeature",
+      "TaxAuthorityRateProduct",
+      "GlAccount",
+      "Uom",
+      "InvoiceItemType",
+      "InventoryItem",
+      "Party",
+      "Geo",
+      "SalesOpportunity"
+    ],
+    "BudgetItemTypeAttr": [
+      "BudgetItemType"
+    ],
+    "BudgetRole": [
+      "Budget",
+      "PartyRole"
+    ],
+    "PaymentGatewayRespMsg": [
+      "PaymentGatewayResponse"
+    ],
+    "BillingAccount": [
+      "PostalAddress"
+    ],
+    "FixedAssetGeoPoint": [
+      "FixedAsset",
+      "GeoPoint"
+    ],
+    "PaymentGroup": [
+      "PaymentGroupType"
+    ],
+    "BudgetScenarioApplication": [
+      "BudgetScenario",
+      "BudgetItem"
+    ],
+    "GlJournal": [
+      "Party"
+    ],
+    "BudgetAttribute": [
+      "Budget"
+    ],
+    "PaymentGatewayClearCommerce": [
+      "PaymentGatewayConfig"
+    ],
+    "AcctgTransEntry": [
+      "GlAccountOrganization",
+      "AcctgTransEntryType",
+      "Party",
+      "RoleType",
+      "SettlementTerm",
+      "StatusItem",
+      "AcctgTrans",
+      "InventoryItem",
+      "GlAccountType"
+    ],
+    "GlAccountOrganization": [
+      "GlAccount",
+      "Party"
+    ],
+    "CreditCard": [
+      "PostalAddress",
+      "PaymentMethod"
+    ],
+    "GiftCard": [
+      "PaymentMethod",
+      "PostalAddress"
+    ],
+    "PaymentMethodTypeGlAccount": [
+      "GlAccount",
+      "Party",
+      "PaymentMethodType"
+    ],
+    "BillingAccountTerm": [
+      "TermType",
+      "BillingAccount",
+      "Uom"
+    ],
+    "PaymentGatewaySecurePay": [
+      "PaymentGatewayConfig"
+    ],
+    "PaymentGatewayPayPal": [
+      "PaymentGatewayConfig"
+    ],
+    "PaymentGatewayConfig": [
+      "PaymentGatewayConfigType"
+    ],
+    "PaymentGatewayOrbital": [
+      "PaymentGatewayConfig"
+    ],
+    "AccommodationMap": [
+      "FixedAsset",
+      "AccommodationClass",
+      "AccommodationMapType"
+    ],
+    "EftAccount": [
+      "PaymentMethod",
+      "PostalAddress"
+    ]
+  },
+  "login": {
+    "UserLoginHistory": [
+      "UserLogin"
+    ],
+    "SecurityGroupPermission": [
+      "SecurityGroup"
+    ],
+    "UserLoginSecurityGroup": [
+      "UserLogin",
+      "SecurityGroup"
+    ],
+    "ProtectedView": [
+      "SecurityGroup"
+    ],
+    "UserLoginPasswordHistory": [
+      "UserLogin"
+    ],
+    "UserLoginSession": [
+      "UserLogin"
+    ]
+  },
+  "humanres": {
+    "PartyResume": [
+      "Content",
+      "Party"
+    ],
+    "UnemploymentClaim": [
+      "StatusItem",
+      "Employment"
+    ],
+    "EmplPosition": [
+      "BudgetItem",
+      "StatusItem",
+      "EmplPositionType",
+      "Party"
+    ],
+    "SalaryStep": [
+      "PayGrade"
+    ],
+    "PayHistory": [
+      "SalaryStep",
+      "PeriodType",
+      "Employment",
+      "PayGrade"
+    ],
+    "EmplLeave": [
+      "Party",
+      "EmplLeaveReasonType",
+      "EmplLeaveType",
+      "Party",
+      "StatusItem"
+    ],
+    "PartyQual": [
+      "StatusItem",
+      "StatusItem",
+      "PartyQualType",
+      "Party"
+    ],
+    "EmploymentApp": [
+      "Party",
+      "StatusItem",
+      "Party",
+      "EmploymentAppSourceType",
+      "EmplPosition",
+      "Party",
+      "JobRequisition"
+    ],
+    "PerfReview": [
+      "PartyRole",
+      "Payment",
+      "EmplPosition",
+      "PartyRole"
+    ],
+    "EmplPositionFulfillment": [
+      "EmplPosition",
+      "Party"
+    ],
+    "JobInterview": [
+      "JobInterviewType",
+      "Party",
+      "Party",
+      "JobRequisition"
+    ],
+    "PersonTraining": [
+      "WorkEffort",
+      "TrainingRequest",
+      "Person",
+      "Party",
+      "TrainingClassType"
+    ],
+    "JobRequisition": [
+      "SkillType"
+    ],
+    "ValidResponsibility": [
+      "ResponsibilityType",
+      "EmplPositionType"
+    ],
+    "PartySkill": [
+      "SkillType",
+      "Party"
+    ],
+    "PartyBenefit": [
+      "PartyRole",
+      "BenefitType",
+      "PeriodType",
+      "PartyRole"
+    ],
+    "EmplPositionTypeClass": [
+      "EmplPositionType",
+      "EmplPositionClassType"
+    ],
+    "EmplPositionTypeRate": [
+      "RateType",
+      "EmplPositionType",
+      "SalaryStep"
+    ],
+    "Employment": [
+      "PartyRole",
+      "TerminationReason",
+      "TerminationType",
+      "Agreement"
+    ],
+    "PerformanceNote": [
+      "PartyRole"
+    ],
+    "PerfReviewItem": [
+      "PerfReviewItemType",
+      "PerfRatingType",
+      "PartyRole"
+    ],
+    "EmplPositionReportingStruct": [
+      "EmplPosition",
+      "EmplPosition"
+    ],
+    "EmplPositionResponsibility": [
+      "ResponsibilityType",
+      "EmplPosition"
+    ],
+    "PayrollPreference": [
+      "PeriodType",
+      "PaymentMethodType",
+      "DeductionType",
+      "PartyRole"
+    ]
+  },
+  "content": {
+    "SurveyQuestionOption": [
+      "SurveyQuestion"
+    ],
+    "ContentPurposeOperation": [
+      "ContentPurposeType",
+      "RoleType",
+      "StatusItem",
+      "ContentOperation"
+    ],
+    "DataResourceMetaData": [
+      "DataSource",
+      "MetaDataPredicate",
+      "DataResource"
+    ],
+    "ContentAssoc": [
+      "Content",
+      "Content",
+      "ContentAssocPredicate",
+      "DataSource",
+      "UserLogin",
+      "ContentAssocType",
+      "UserLogin"
+    ],
+    "ElectronicText": [
+      "DataResource"
+    ],
+    "DataResourceAttribute": [
+      "DataResource"
+    ],
+    "SurveyTrigger": [
+      "Survey",
+      "SurveyApplType"
+    ],
+    "ContentPurpose": [
+      "ContentPurposeType",
+      "Content"
+    ],
+    "DataResourcePurpose": [
+      "ContentPurposeType",
+      "DataResource"
+    ],
+    "Document": [
+      "DocumentType"
+    ],
+    "DataResourceTypeAttr": [
+      "DataResourceType"
+    ],
+    "WebSiteRole": [
+      "PartyRole",
+      "WebSite"
+    ],
+    "SurveyPage": [
+      "Survey"
+    ],
+    "ContentApproval": [
+      "RoleType",
+      "Content",
+      "Party",
+      "StatusItem"
+    ],
+    "WebSitePathAlias": [
+      "Content",
+      "WebSite"
+    ],
+    "ContentAttribute": [
+      "Content"
+    ],
+    "FileExtension": [
+      "MimeType"
+    ],
+    "SurveyMultiRespColumn": [
+      "SurveyMultiResp"
+    ],
+    "ContentRole": [
+      "Content",
+      "PartyRole"
+    ],
+    "DocumentAttribute": [
+      "Document"
+    ],
+    "WebUserPreference": [
+      "UserLogin",
+      "WebPreferenceType",
+      "Party"
+    ],
+    "ImageDataResource": [
+      "DataResource"
+    ],
+    "MimeTypeHtmlTemplate": [
+      "MimeType"
+    ],
+    "DocumentTypeAttr": [
+      "DocumentType"
+    ],
+    "SurveyMultiResp": [
+      "Survey"
+    ],
+    "SurveyResponseAnswer": [
+      "SurveyQuestionOption",
+      "Content",
+      "SurveyResponse"
+    ],
+    "ContentSearchConstraint": [
+      "ContentSearchResult"
+    ],
+    "DataResourceRole": [
+      "DataResource",
+      "PartyRole"
+    ],
+    "SurveyResponse": [
+      "Survey",
+      "StatusItem"
+    ],
+    "ContentRevision": [
+      "Content",
+      "Party"
+    ],
+    "WebSitePublishPoint": [
+      "Content"
+    ],
+    "DataResource": [
+      "Survey",
+      "DataTemplateType",
+      "DataCategory",
+      "SurveyResponse",
+      "CharacterSet",
+      "DataSource",
+      "UserLogin",
+      "StatusItem",
+      "DataResourceType",
+      "UserLogin"
+    ],
+    "VideoDataResource": [
+      "DataResource"
+    ],
+    "ContentMetaData": [
+      "DataSource",
+      "MetaDataPredicate",
+      "Content"
+    ],
+    "ContentRevisionItem": [
+      "DataResource",
+      "ContentRevision",
+      "DataResource"
+    ],
+    "ContentTypeAttr": [
+      "ContentType"
+    ],
+    "AudioDataResource": [
+      "DataResource"
+    ],
+    "Content": [
+      "DataResource",
+      "ContentType",
+      "CustomMethod",
+      "CharacterSet",
+      "DataSource",
+      "UserLogin",
+      "StatusItem",
+      "DataResource",
+      "UserLogin"
+    ],
+    "ContentKeyword": [
+      "Content",
+      "Content"
+    ],
+    "OtherDataResource": [
+      "DataResource"
+    ],
+    "SurveyQuestionAppl": [
+      "SurveyQuestion",
+      "Survey",
+      "SurveyQuestionOption"
+    ],
+    "WebSiteContent": [
+      "WebSiteContentType",
+      "Content",
+      "WebSite"
+    ],
+    "SurveyQuestion": [
+      "SurveyQuestionType",
+      "Enumeration",
+      "SurveyQuestionCategory",
+      "Geo"
+    ]
+  },
+  "party": {
+    "AgreementRole": [
+      "Agreement",
+      "PartyRole"
+    ],
+    "PartyNeed": [
+      "PartyType",
+      "RoleType",
+      "NeedType",
+      "ProductCategory",
+      "Product",
+      "CommunicationEvent",
+      "Party"
+    ],
+    "PartyStatus": [
+      "StatusItem",
+      "Party",
+      "UserLogin"
+    ],
+    "PartyTypeAttr": [
+      "PartyType"
+    ],
+    "Affiliate": [
+      "PartyGroup"
+    ],
+    "RoleTypeAttr": [
+      "RoleType"
+    ],
+    "PartyContent": [
+      "PartyContentType",
+      "Content",
+      "Party"
+    ],
+    "PartyContactMechPurpose": [
+      "ContactMechPurposeType",
+      "Party",
+      "ContactMech"
+    ],
+    "CommunicationEvent": [
+      "Party",
+      "ContactMechType",
+      "CommunicationEventType",
+      "MimeType",
+      "ContactList",
+      "ContactMech",
+      "RoleType",
+      "RoleType",
+      "ContactMech",
+      "StatusItem",
+      "Party"
+    ],
+    "ContactMechTypeAttr": [
+      "ContactMechType"
+    ],
+    "PartyIcsAvsOverride": [
+      "Party"
+    ],
+    "PartyClassificationGroup": [
+      "PartyClassificationType"
+    ],
+    "AgreementFacilityAppl": [
+      "Facility",
+      "AgreementItem"
+    ],
+    "PartyRole": [
+      "RoleType",
+      "Party"
+    ],
+    "PartyGeoPoint": [
+      "Party",
+      "GeoPoint"
+    ],
+    "PartyNote": [
+      "NoteData",
+      "Party"
+    ],
+    "ValidContactMechRole": [
+      "RoleType",
+      "ContactMechType"
+    ],
+    "PartyNameHistory": [
+      "Party"
+    ],
+    "TermTypeAttr": [
+      "TermType"
+    ],
+    "AgreementItemTypeAttr": [
+      "AgreementItemType"
+    ],
+    "CommunicationEventPurpose": [
+      "CommunicationEventPrpTyp",
+      "CommunicationEvent"
+    ],
+    "AgreementTermAttribute": [
+      "AgreementTerm"
+    ],
+    "PostalAddress": [
+      "Geo",
+      "Geo",
+      "ContactMech",
+      "Geo",
+      "Geo",
+      "Geo",
+      "Geo",
+      "GeoPoint"
+    ],
+    "PostalAddressBoundary": [
+      "Geo",
+      "PostalAddress"
+    ],
+    "PartyRelationship": [
+      "PartyRole",
+      "PriorityType",
+      "SecurityGroup",
+      "PartyRelationshipType",
+      "StatusItem",
+      "PartyRole"
+    ],
+    "AgreementEmploymentAppl": [
+      "AgreementItem",
+      "Employment"
+    ],
+    "CommunicationEventType": [
+      "ContactMechType"
+    ],
+    "ContactMechTypePurpose": [
+      "ContactMechPurposeType",
+      "ContactMechType"
+    ],
+    "AgreementContent": [
+      "Agreement",
+      "Content",
+      "AgreementContentType"
+    ],
+    "Person": [
+      "Party"
+    ],
+    "PartyContactMech": [
+      "RoleType",
+      "PartyRole",
+      "ContactMech"
+    ],
+    "PartyInvitationRoleAssoc": [
+      "RoleType",
+      "PartyInvitation"
+    ],
+    "PartyClassification": [
+      "PartyClassificationGroup",
+      "Party"
+    ],
+    "TelecomNumber": [
+      "ContactMech"
+    ],
+    "ContactMech": [
+      "ContactMechType"
+    ],
+    "PartyGroup": [
+      "Party"
+    ],
+    "AgreementGeographicalApplic": [
+      "Geo",
+      "AgreementItem"
+    ],
+    "CommunicationEventProduct": [
+      "Product",
+      "CommunicationEvent"
+    ],
+    "AgreementPartyApplic": [
+      "Agreement",
+      "Party"
+    ],
+    "OldPartyTaxInfo": [
+      "Geo",
+      "Party"
+    ],
+    "Addendum": [
+      "AgreementItem"
+    ],
+    "Party": [
+      "PartyType",
+      "UserLogin",
+      "DataSource",
+      "StatusItem",
+      "UserLogin"
+    ],
+    "PartyAttribute": [
+      "Party"
+    ],
+    "PartyProfileDefault": [
+      "ProductStore",
+      "Party"
+    ],
+    "AgreementAttribute": [
+      "Agreement"
+    ],
+    "AgreementPromoAppl": [
+      "AgreementItem",
+      "ProductPromo"
+    ],
+    "CommEventContentAssoc": [
+      "Content",
+      "CommContentAssocType",
+      "CommunicationEvent"
+    ],
+    "AgreementItem": [
+      "Agreement",
+      "AgreementItemType"
+    ],
+    "AgreementWorkEffortApplic": [
+      "WorkEffort",
+      "Agreement"
+    ],
+    "PartyInvitation": [
+      "Party",
+      "StatusItem"
+    ],
+    "PartyInvitationGroupAssoc": [
+      "Party",
+      "PartyInvitation"
+    ],
+    "PartyRelationshipType": [
+      "RoleType",
+      "RoleType"
+    ],
+    "ContactMechLink": [
+      "ContactMech",
+      "ContactMech"
+    ],
+    "Vendor": [
+      "Party"
+    ],
+    "AgreementItemAttribute": [
+      "AgreementItem"
+    ],
+    "AgreementProductAppl": [
+      "Product",
+      "AgreementItem"
+    ],
+    "PartyIdentification": [
+      "PartyIdentificationType",
+      "Party"
+    ],
+    "Agreement": [
+      "PartyRole",
+      "Product",
+      "AgreementType",
+      "PartyRole"
+    ],
+    "CommunicationEventRole": [
+      "StatusItem",
+      "CommunicationEvent",
+      "PartyRole",
+      "ContactMech"
+    ],
+    "AgreementTerm": [
+      "TermType",
+      "InvoiceItemType",
+      "AgreementItem"
+    ],
+    "PartyCarrierAccount": [
+      "Party",
+      "Party"
+    ],
+    "AgreementTypeAttr": [
+      "AgreementType"
+    ],
+    "ContactMechAttribute": [
+      "ContactMech"
+    ],
+    "PartyDataSource": [
+      "DataSource",
+      "Party"
+    ]
+  },
+  "order": {
+    "ReturnHeader": [
+      "Party",
+      "ContactMech",
+      "BillingAccount",
+      "ReturnHeaderType",
+      "FinAccount",
+      "StatusItem",
+      "PaymentMethod",
+      "Party",
+      "Facility"
+    ],
+    "ReturnItem": [
+      "Product",
+      "OrderItemShipGrpInvRes",
+      "ReturnType",
+      "ReturnItemResponse",
+      "StatusItem",
+      "ReturnReason",
+      "ReturnItemType",
+      "ReturnHeader",
+      "StatusItem"
+    ],
+    "OrderAdjustment": [
+      "OrderHeader",
+      "ProductPromo",
+      "Geo",
+      "TaxAuthority",
+      "Geo",
+      "UserLogin",
+      "OrderAdjustmentType",
+      "TaxAuthorityRateProduct",
+      "GlAccount"
+    ],
+    "ShoppingList": [
+      "RecurrenceInfo",
+      "ProductPromoCode",
+      "ShoppingListType",
+      "ContactMech",
+      "PaymentMethod",
+      "ProductStoreShipmentMeth",
+      "Party",
+      "CarrierShipmentMethod"
+    ],
+    "QuoteItem": [
+      "WorkEffort",
+      "Product",
+      "DeliverableType",
+      "ProductFeature",
+      "Uom",
+      "Quote",
+      "SkillType",
+      "CustRequestItem"
+    ],
+    "CustRequestWorkEffort": [
+      "WorkEffort",
+      "CustRequest"
+    ],
+    "CustRequestResolution": [
+      "CustRequestType"
+    ],
+    "OrderNotification": [
+      "OrderHeader",
+      "Enumeration"
+    ],
+    "OrderAdjustmentAttribute": [
+      "OrderAdjustment"
+    ],
+    "OrderBlacklist": [
+      "OrderBlacklistType"
+    ],
+    "ReturnContactMech": [
+      "ContactMechPurposeType",
+      "ReturnHeader",
+      "ContactMech"
+    ],
+    "ReturnItemBilling": [
+      "ReturnItem",
+      "InvoiceItem",
+      "ShipmentReceipt"
+    ],
+    "OrderShipment": [
+      "OrderHeader",
+      "Shipment"
+    ],
+    "ReturnItemShipment": [
+      "ShipmentItem",
+      "ReturnItem"
+    ],
+    "QuoteAdjustment": [
+      "ProductPromo",
+      "Geo",
+      "TaxAuthority",
+      "Geo",
+      "UserLogin",
+      "GlAccount",
+      "Quote",
+      "OrderAdjustmentType"
+    ],
+    "ReturnItemTypeMap": [
+      "ReturnHeaderType"
+    ],
+    "ShoppingListWorkEffort": [
+      "WorkEffort",
+      "ShoppingList"
+    ],
+    "OrderItemTypeAttr": [
+      "OrderItemType"
+    ],
+    "OrderItemContactMech": [
+      "ContactMechPurposeType",
+      "OrderItem",
+      "ContactMech"
+    ],
+    "CustRequestItemWorkEffort": [
+      "WorkEffort",
+      "CustRequestItem"
+    ],
+    "OrderTerm": [
+      "OrderHeader",
+      "TermType",
+      "Uom"
+    ],
+    "OrderHeader": [
+      "OrderType",
+      "BillingAccount",
+      "ProductStore",
+      "ShoppingList",
+      "Facility",
+      "StatusItem",
+      "UserLogin",
+      "StatusItem"
+    ],
+    "CustRequestContent": [
+      "Content",
+      "CustRequest"
+    ],
+    "CustRequest": [
+      "Party",
+      "ContactMech",
+      "StatusItem",
+      "CustRequestType",
+      "ProductStore",
+      "CustRequestCategory"
+    ],
+    "RequirementTypeAttr": [
+      "RequirementType"
+    ],
+    "DesiredFeature": [
+      "ProductFeature",
+      "Requirement"
+    ],
+    "WorkRequirementFulfillment": [
+      "WorkEffort",
+      "WorkReqFulfType",
+      "Requirement"
+    ],
+    "OrderItemRole": [
+      "OrderItem",
+      "PartyRole"
+    ],
+    "CustRequestCategory": [
+      "CustRequestType"
+    ],
+    "OrderAdjustmentBilling": [
+      "InvoiceItem",
+      "OrderAdjustment"
+    ],
+    "OrderHeaderNote": [
+      "OrderHeader",
+      "NoteData"
+    ],
+    "CustRequestTypeAttr": [
+      "CustRequestType"
+    ],
+    "Requirement": [
+      "Facility",
+      "Product",
+      "RequirementType",
+      "StatusItem",
+      "FixedAsset",
+      "Deliverable"
+    ],
+    "OrderItemAttribute": [
+      "OrderItem"
+    ],
+    "CustRequestNote": [
+      "CustRequest",
+      "NoteData"
+    ],
+    "CustRequestParty": [
+      "CustRequest",
+      "PartyRole"
+    ],
+    "RequirementStatus": [
+      "StatusItem",
+      "Requirement",
+      "UserLogin"
+    ],
+    "OrderItemPriceInfo": [
+      "OrderItem",
+      "ProductPriceAction"
+    ],
+    "QuoteCoefficient": [
+      "Quote"
+    ],
+    "CartAbandonedLine": [
+      "Product",
+      "ProdCatalog"
+    ],
+    "CustRequestAttribute": [
+      "CustRequest"
+    ],
+    "CustRequestStatus": [
+      "StatusItem",
+      "CustRequest",
+      "UserLogin"
+    ],
+    "CommunicationEventOrder": [
+      "OrderHeader",
+      "CommunicationEvent"
+    ],
+    "ReturnItemResponse": [
+      "OrderHeader",
+      "FinAccountTrans",
+      "OrderPaymentPreference",
+      "Payment",
+      "BillingAccount"
+    ],
+    "RequirementBudgetAllocation": [
+      "BudgetItem",
+      "Requirement"
+    ],
+    "QuoteAttribute": [
+      "Quote"
+    ],
+    "OrderItemGroupOrder": [
+      "ProductGroupOrder",
+      "OrderItem"
+    ],
+    "OrderTypeAttr": [
+      "OrderType"
+    ],
+    "OrderPaymentPreference": [
+      "OrderHeader",
+      "PaymentMethodType",
+      "FinAccount",
+      "StatusItem",
+      "PaymentMethod",
+      "ProductPricePurpose",
+      "UserLogin"
+    ],
+    "OrderItemShipGrpInvRes": [
+      "OrderItem",
+      "InventoryItem"
+    ],
+    "CustRequestCommEvent": [
+      "CustRequest",
+      "CommunicationEvent"
+    ],
+    "OrderContactMech": [
+      "ContactMechPurposeType",
+      "OrderHeader",
+      "ContactMech"
+    ],
+    "ProductOrderItem": [
+      "Product",
+      "OrderItem",
+      "OrderItem"
+    ],
+    "WorkOrderItemFulfillment": [
+      "WorkEffort",
+      "OrderItem"
+    ],
+    "OrderStatus": [
+      "StatusItem",
+      "UserLogin",
+      "OrderHeader"
+    ],
+    "OrderItemChange": [
+      "UserLogin",
+      "OrderItem"
+    ],
+    "QuoteWorkEffort": [
+      "WorkEffort",
+      "Quote"
+    ],
+    "OrderAttribute": [
+      "OrderHeader"
+    ],
+    "CustRequestItem": [
+      "CustRequestResolution",
+      "Product",
+      "StatusItem",
+      "CustRequest"
+    ],
+    "CustRequestItemNote": [
+      "CustRequestItem",
+      "NoteData"
+    ],
+    "OrderRole": [
+      "OrderHeader",
+      "PartyRole"
+    ],
+    "QuoteTypeAttr": [
+      "QuoteType"
+    ],
+    "OrderTermAttribute": [
+      "OrderTerm"
+    ],
+    "QuoteNote": [
+      "NoteData",
+      "Quote"
+    ],
+    "OrderContent": [
+      "OrderHeader",
+      "Content",
+      "OrderContentType"
+    ],
+    "QuoteTerm": [
+      "TermType",
+      "Quote"
+    ],
+    "ReturnAdjustment": [
+      "ReturnType",
+      "ProductPromo",
+      "ReturnAdjustmentType",
+      "Geo",
+      "ReturnHeader",
+      "TaxAuthority",
+      "Geo",
+      "UserLogin",
+      "OrderAdjustment",
+      "TaxAuthorityRateProduct",
+      "GlAccount"
+    ],
+    "RespondingParty": [
+      "CustRequest",
+      "Party",
+      "ContactMech"
+    ],
+    "OrderHeaderWorkEffort": [
+      "WorkEffort",
+      "OrderHeader"
+    ],
+    "OrderItemBilling": [
+      "OrderItem",
+      "ItemIssuance",
+      "InvoiceItem",
+      "ShipmentReceipt"
+    ],
+    "OrderItemShipGroup": [
+      "Facility",
+      "OrderHeader",
+      "Party",
+      "PostalAddress",
+      "TelecomNumber",
+      "PartyRole",
+      "Party",
+      "ShipmentMethodType"
+    ],
+    "ShoppingListItem": [
+      "ShoppingList",
+      "Product"
+    ],
+    "RequirementCustRequest": [
+      "CustRequestItem",
+      "Requirement"
+    ],
+    "CustRequestType": [
+      "PartyRelationship"
+    ],
+    "OrderProductPromoCode": [
+      "OrderHeader",
+      "ProductPromoCode"
+    ],
+    "Quote": [
+      "QuoteType",
+      "StatusItem",
+      "ProductStore",
+      "Party"
+    ],
+    "OrderSummaryEntry": [
+      "Facility",
+      "Product"
+    ],
+    "ShoppingListItemSurvey": [
+      "ShoppingListItem",
+      "SurveyResponse"
+    ],
+    "QuoteTermAttribute": [
+      "QuoteTerm"
+    ],
+    "OrderDeliverySchedule": [
+      "StatusItem",
+      "OrderHeader"
+    ],
+    "OrderItem": [
+      "UserLogin",
+      "OrderItemGroup",
+      "OrderItemType",
+      "Product",
+      "InventoryItem",
+      "GlAccount",
+      "QuoteItem",
+      "StatusItem",
+      "StatusItem",
+      "UserLogin",
+      "SalesOpportunity"
+    ],
+    "ReturnStatus": [
+      "StatusItem",
+      "ReturnHeader",
+      "UserLogin"
+    ],
+    "OrderRequirementCommitment": [
+      "OrderItem",
+      "Requirement"
+    ],
+    "OrderItemShipGroupAssoc": [
+      "OrderItemShipGroup"
+    ],
+    "OrderItemAssoc": [
+      "OrderHeader",
+      "OrderHeader",
+      "OrderItemAssocType"
+    ],
+    "RequirementRole": [
+      "Requirement",
+      "PartyRole"
+    ],
+    "OrderAdjustmentTypeAttr": [
+      "OrderAdjustmentType"
+    ],
+    "QuoteRole": [
+      "PartyRole",
+      "Quote"
+    ],
+    "RequirementAttribute": [
+      "Requirement"
+    ]
+  }
+}

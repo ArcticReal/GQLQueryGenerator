@@ -6,7 +6,7 @@ class Import{
 
   get generate(){
 
-    return `import {${this.resources}} from './${this.source}.js';\n`;
+    return `import {${this.resources}} from '../${this.source}.js';\n`;
   }
 
 }

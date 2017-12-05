@@ -7,39 +7,39 @@ import fs from 'fs';
 
 
 import allEntities from '../resources/entity_jsons/overall.json';
+import allImports from '../resources/import.json';
 
+const pathToOutput = '/home/work/workspace/QLGen/generatedFiles';
 
-console.log(importBuffer);
+const folders = Object.keys(allImports);
 
-const pathToOutput = '/home/work/workspace/QLGen/generatedFiles/';
+folders.forEach((folder) => {
+  allEntities[folder].forEach((entity) => {
+    const imports = [];
 
-const imports = [
-  new Import({
-    resources: [
-      'ProductCategoryMemberType'
-    ],
-    source: 'product/ProductCategoryMemberType'
-  }),
-  new Import({
-    resources: [
-      'ProductCategoryType',
-      'SomeOtherType'
-    ],
-    source: 'product/ProductCategoryType'
-  })
-];
+    const specificImports = allImports[folder][entity.entityName];
+    if(specificImports!==undefined){
+      specificImports.forEach((reference) => {
+        imports.push(new Import({
+          resources: [reference],
+          source: `${folder}/${reference}`
+        }));
+      });
+    }
+    const typeDef = {
+      typeName: entity.entityName,
+      typeDescription: `Type for ${entity.entityName} in ${folder}`,
+      fields: entity.fields.map((field) => {return new TypeField(field);}),
+      additionalImports: imports
+    };
 
-const typeDef = {
-  typeName: productEntity.entityName,
-  typeDescription: "this is a product type",
-  fields: productEntity.fields.map((field) => {return new TypeField(field);}),
-  additionalImports: imports
-};
-const file = {
-  path: `${pathToOutput}types/`,
-  name: `${typeDef.typeName}Type.js`,
-  content: new ObjectTypeTemplate(typeDef).generate,
-  encoding: 'utf8'
-};
+    const file = {
+      path: `${pathToOutput}/types/${folder}/`,
+      name: `${typeDef.typeName}Type.js`,
+      content: new ObjectTypeTemplate(typeDef).generate,
+      encoding: 'utf8'
+    };
+    createFile(file);
 
-createFile(file);
+  });
+});
