@@ -7,6 +7,7 @@ class ObjectTypeTemplate{
 import {
   GraphQLSchema,
   GraphQLObjectType,
+  GraphQLInputObjectType,
   GraphQLInt,
   GraphQLFloat,
   GraphQLString,
@@ -16,7 +17,7 @@ import {
 
 ${variables.additionalImports.map(imp => {return imp.generate;}).join('')}
 
-const ${variables.typeName} = new GraphQLObjectType({
+const ${variables.typeName}Type = new GraphQLObjectType({
   name: '${variables.typeName}Type',
   description: '${variables.typeDescription}',
 
@@ -24,7 +25,7 @@ const ${variables.typeName} = new GraphQLObjectType({
   })
 });
 
-export {${variables.typeName}};
+export {${variables.typeName}Type};
     `);
     this.template = template;
   }
