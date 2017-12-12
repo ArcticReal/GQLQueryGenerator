@@ -16,7 +16,8 @@
   },
   "scripts": {
     "start": "babel src -d lib && node lib/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "move": "./scripts/move.sh"
   },
   "author": "",
   "license": "ISC"
