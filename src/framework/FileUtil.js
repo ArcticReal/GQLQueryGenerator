@@ -1,17 +1,19 @@
 import fs from 'fs';
 
 function createFile(file){
-  fs.mkdir(file.path, (err) => {
-    if (err){
-      if(err.code!=='EEXIST')
-        throw err;
-    }else {
-      console.log('mkdired');
-    }
-    fs.writeFile(`${file.path}${file.name}`, file.content, file.encoding, (err) => {
-      if (err) throw err;
-    });
+  mkdirs(file.path);
+  fs.writeFile(`${file.path}${file.name}`, file.content, file.encoding, (err) => {
+    if (err) throw err;
   });
+
 }
 
-export {createFile};
+function mkdirs(path){
+  if (!fs.existsSync(path)) {
+    mkdirs(path.replace(/[\w]*\/$/, ""));
+    fs.mkdirSync(path);
+  }
+}
+
+
+export {createFile, mkdirs};

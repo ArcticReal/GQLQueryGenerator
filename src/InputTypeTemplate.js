@@ -3,8 +3,17 @@ class InputTypeTemplate{
   constructor(newVariables){
     const variables = newVariables;
     //keep indentation
-    const template = (`
-
+    const template = (
+`import {
+  GraphQLSchema,
+  GraphQLObjectType,
+  GraphQLInputObjectType,
+  GraphQLInt,
+  GraphQLFloat,
+  GraphQLString,
+  GraphQLBoolean,
+  GraphQLList,
+} from 'graphql';
 
 const ${variables.typeName}InputType = new GraphQLInputObjectType({
   name: '${variables.typeName}InputType',

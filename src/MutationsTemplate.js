@@ -2,21 +2,38 @@ class MutationsTemplate{
 
   constructor(newVariables){
     if(newVariables!==null&&newVariables!==undefined){
-      this.typeName = newVariables.typeName;
+      this.mutationName = newVariables.mutationName;
+      this.returnType = newVariables.returnType;
+      this.mutationDescription = newVariables.mutationDescription;
+      this.args = newVariables.args;
+      this.method = newVariables.method;
       this.fetchUrl = newVariables.fetchUrl;
+      this.bodyInput = newVariables.bodyInput;
+      if(this.bodyInput===null||this.bodyInput===undefined||this.bodyInput===""){
+        this.bodyInput = "null";
+      }
     }
+  }
 
-    const template = `
-const create${this.typeName}Mutation = {
-  type: ${this.typeName}Type,
-  description: create a ${this.typeName},
-  args:{
-    ${this.typeName}: ${this.typeName}InputType
-  }.
+
+  get generate(){
+
+    this.template = `
+
+const ${this.mutationName} = {
+  type: ${this.returnType},
+  description: ${this.mutationDescription},
+  args:{${this.args.map((arg) => {return `${arg.fieldName}: {type: ${arg.fieldType}}`;})}},
   resolve: (root, args, {req}) => {
-    return postToUrl('${this.fetchUrl}', \`\${args.${this.typeName}}\`, req)
+    return ${this.method}ToUrl(\`${this.fetchUrl}\`, ${this.bodyInput}, req);
   }
-}`;
+};
+export {${this.mutationName}};
+`;
 
+    return this.template;
   }
+
 }
+
+export {MutationsTemplate};
