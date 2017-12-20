@@ -54,7 +54,7 @@ function generateMutations(){
           fetchUrl: path.replace("/", "").replace("/{", "/${args.") + "?",
           method: method,
           mutationName: swagger.paths[path][method].summary,
-          returnType: "GraphQLString",
+          returnType: "ResopnseType",
           mutationDescription: "'mutation for ofbiz " + swagger.paths[path][method].summary + " method'",
           args: args,
           bodyInput: "",
@@ -174,12 +174,7 @@ function generateMutations(){
                 type = convertType(parameter.type);
               }
             }else {
-              type = "new GraphQLList(KeyValueType)";
-              imports.add(new Import({
-                pathDepth: pathDepth + 1,
-                resources: "KeyValueType",
-                source: "framework/helpTypes"
-              }));
+              type = "new GraphQLList(KeyValueInputType)";
             }
             newArgs.push({
               fieldName: name,
@@ -225,7 +220,12 @@ function generateMutations(){
       resources: ["postToUrl", "deleteToUrl", "putToUrl"],
       source: "framework/ofbizCon",
       pathDepth: pathDepth + 1
+    }));
 
+    imports.add(new Import({
+      resources: ["ResopnseType", "KeyValueInputType"],
+      source: "framework/helpTypes",
+      pathDepth: pathDepth + 1
     }));
 
     var importArray = [];
