@@ -1,6 +1,7 @@
 
 import {ObjectTypeTemplate} from './ObjectTypeTemplate.js';
 import {InputTypeTemplate} from './InputTypeTemplate.js';
+import {ResponseTypeTemplate} from './ResponseTypeTemplate.js';
 import {MutationsTemplate} from './MutationsTemplate.js';
 import {TypeField} from './TypeFieldClass.js';
 import {Import} from './ImportClass.js';
@@ -46,17 +47,22 @@ function generateMutations(){
         }
 
         var args = swagger.paths[path][method].parameters;
+        var responses = swagger.paths[path][method].responses;
         if(args===undefined){
           args = [];
+        }
+        if(responses===undefined){
+          responses = [];
         }
 
         mutations[tag].push({
           fetchUrl: path.replace("/", "").replace("/{", "/${args.") + "?",
           method: method,
           mutationName: swagger.paths[path][method].summary,
-          returnType: "ResopnseType",
+          returnType: "ResponseType",
           mutationDescription: "'mutation for ofbiz " + swagger.paths[path][method].summary + " method'",
           args: args,
+          responses: responses,
           bodyInput: "",
         });
 
@@ -185,6 +191,117 @@ function generateMutations(){
 
         }
       });
+
+      let responses = mutation.responses;
+      let responseKeys = Object.keys(responses);
+      responseKeys.forEach((responseKey) => {
+        let response = responses[responseKey];
+        if(response.schema!==undefined){
+          var responseType = response.schema.type;
+          if (responseType===undefined) {
+            responseType = response.schema.$ref.split(/\//)[2];
+            if (fileLocations[responseType + 'ResponseType'] !==undefined) {
+              imports.add(new Import({
+                pathDepth: pathDepth,
+                resources: responseType + "ResponseType",
+                source:  `${fileLocations[responseType + "ResponseType"]}/${responseType}ResponseType`
+              }));
+            }else if (fileLocations[responseType + "Type"] !== undefined) {
+              const responseTypeDef = generateResponseDefFromSwagger(responseType);
+              const file = {
+                path: `${pathToOutput}/domain/${fileLocations[responseType + 'Type']}/`,
+                name: `${responseType}ResponseType.js`,
+                content: new ResponseTypeTemplate(responseTypeDef).generate,
+                encoding: 'utf8'
+              };
+              createFile(file);
+              fileLocations[responseType + "ResponseType"] = `${fileLocations[responseType + 'Type']}`;
+
+              imports.add(new Import({
+                pathDepth: pathDepth,
+                resources: responseType + "ResponseType",
+                source:  `${fileLocations[responseType + 'ResponseType']}/${responseType}ResponseType`
+              }));
+            } else {
+              const responseTypeDef = generateResponseDefFromSwagger(responseType);
+              const file = {
+                path: `${pathToOutput}/domain/dto/`,
+                name: `${responseType}ResponseType.js`,
+                content: new ResponseTypeTemplate(responseTypeDef).generate,
+                encoding: 'utf8'
+              };
+              createFile(file);
+              fileLocations[responseType + "ResponseType"] = `dto`;
+
+              imports.add(new Import({
+                pathDepth: pathDepth,
+                resources: responseType + "ResponseType",
+                source:  `${fileLocations[responseType + 'ResponseType']}/${responseType}ResponseType`
+              }));
+            }
+            responseType = responseType + 'ResponseType';
+          } else {
+            if (responseType!=="object") {
+              if (responseType.includes("array")) {
+                responseType = response.schema.items.type;
+                if (responseType!==undefined) {
+                  responseType = convertType(responseType);
+                }else {
+                  responseType = response.schema.items.$ref.split("/")[2];
+                  if (fileLocations[responseType + 'ResponseType']!==undefined) {
+                    imports.add(new Import({
+                      pathDepth: pathDepth,
+                      resources: responseType + "ResponseType",
+                      source:  `${fileLocations[responseType + 'ResponseType']}/${responseType}ResponseType`
+                    }));
+                  }else if (fileLocations[responseType + "Type"] !== undefined) {
+                    const responseTypeDef = generateResponseDefFromSwagger(responseType);
+                    const file = {
+                      path: `${pathToOutput}/domain/${fileLocations[responseType + 'Type']}/`,
+                      name: `${responseType}ResponseType.js`,
+                      content: new ResponseTypeTemplate(responseTypeDef).generate,
+                      encoding: 'utf8'
+                    };
+                    createFile(file);
+                    fileLocations[responseType + "ResponseType"] = fileLocations[responseType + 'Type'];
+
+                    imports.add(new Import({
+                      pathDepth: pathDepth,
+                      resources: responseType + "ResponseType",
+                      source:  `${fileLocations[responseType + 'ResponseType']}/${responseType}ResponseType`
+                    }));
+                  } else {
+                    const responseTypeDef = generateResponseDefFromSwagger(responseType);
+                    const file = {
+                      path: `${pathToOutput}/domain/dto/`,
+                      name: `${responseType}ResponseType.js`,
+                      content: new ResponseTypeTemplate(responseTypeDef).generate,
+                      encoding: 'utf8'
+                    };
+                    createFile(file);
+                    fileLocations[responseType + "ResponseType"] = `dto`;
+
+                    imports.add(new Import({
+                      pathDepth: pathDepth,
+                      resources: responseType + "ResponseType",
+                      source:  `${fileLocations[responseType + 'ResponseType']}/${responseType}ResponseType`
+                    }));
+
+                  }
+
+                }
+                responseType = `new GraphQLList(${responseType + 'ResponseType'})`;
+              }else {
+                responseType = convertType(responseType);
+              }
+            }else {
+              responseType = "ResponseType";
+            }
+          }
+          mutation.returnType = responseType;
+        }
+      });
+
       var mutationDef = mutation;
       mutationDef.args = newArgs;
       fileContent += new MutationsTemplate(mutationDef).generate;
@@ -223,7 +340,7 @@ function generateMutations(){
     }));
 
     imports.add(new Import({
-      resources: ["ResopnseType", "KeyValueInputType"],
+      resources: ["ResponseType", "KeyValueInputType"],
       source: "framework/helpTypes",
       pathDepth: pathDepth + 1
     }));
@@ -294,6 +411,18 @@ function generateInputDefFromSwagger(typeName){
   return typeDefInput;
 }
 
+function generateResponseDefFromSwagger(typeName){
+  var fields = resolveFields(typeName);
+
+  const responseTypeDef = {
+    typeName: typeName,
+    typeDescription: `response type for ${typeName}`,
+    fields: fields,
+  };
+
+  return responseTypeDef;
+}
+
 function resolveFields(typeName){
 
 
@@ -316,7 +445,7 @@ function resolveFields(typeName){
 
 function convertType(swaggerType, typeName, property){
 
-  let convertedType;
+  let convertedType = null;
   switch (swaggerType) {
     case "number":
       convertedType = "GraphQLFloat";
